@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+html{
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+p{
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 600px) {
+
+    .btn-atras{
+        cursor: pointer;
+    }
+    
+    #section{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+
+    }
+
+    .btn-atras{
+        display: flex;
+
+        margin-top: 3rem;
+        padding: 0rem 1rem 0 1rem;
+        width: 90%;
+    }
+    .datos{
+         display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 1rem;
+        width: 90%;
+        height: fit-content;
+        padding: 1rem;
+
+        background-color: #e9e9e900;
+        border-radius: 0.7rem;
+    }
+
+    .nombre-scc{
+        display: flex;
+
+        width: 100%;
+        height: fit-content;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .info-est{
+        display: flex;     
+        width: 100%;  
+    }
+    .info-est1{
+        display: flex;  
+        flex-direction: column;
+        width: 70%;     
+    }
+        .n-estado{
+            font-size: 0.8rem;
+        }
+        .estado{
+            color: #4caf50;
+        }.estado2{
+            color: #e0d532;
+            font-weight: 600;
+        }.estado3{
+            color: #e04932;
+        }
+    .info-est2{
+        display: flex;
+        justify-content: flex-end;
+    
+        width: 30%;   
+    }
+
+    .grafica-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 1rem;
+        height: 15rem;
+        width: 100%;
+    }
+        #porcentaje2{
+            bottom: 45%;
+        }
+        #porcentaje3{
+            bottom: 45%;
+        }
+        .porcentaje-g{
+            display: flex;
+            position: fixed;
+            bottom: 50%;
+            padding: 1rem 0rem 2rem;
+
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+    .info-secc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        padding-top: 2rem;
+    }
+
+    .info-sec{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .info-sec4{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;        
+        width: 100%;
+        justify-content: space-between;
+    }
+        .n-precio{
+            padding-top: 1rem;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+
+        }
+
+        .total-pagar{
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+        
+    /* Estilo del contenedor del toggle*/
+    .toggle-switch {
+        position: relative;
+        width: 60px;
+        height: 30px;
+      }
+  
+      /* Caja que actúa como fondo del switch */
+      .toggle-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+  
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 30px;
+        transition: 0.4s;
+      }
+  
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        border-radius: 50%;
+        transition: 0.4s;
+      }
+  
+      /* Cambiar colores al estar activado */
+      input:checked + .slider {
+        background-color: #79cd4c;
+      }
+  
+      input:checked + .slider:before {
+        transform: translateX(30px);
+      }
+}
